@@ -3,10 +3,68 @@
 
     <head>
        <title>Tytuł</title>
+        <meta charset="UTF-8">
+        <style>
+            label {
+                display: block;
+                font: 9px 'Arial', sans-serif;
+            }
+
+            label.checkboxy {
+                display: inline;
+            }
+
+            input {
+                font: 10px 'Arial', sans-serif;
+            }
+
+        </style>
     </head>
 
     <body>
+        <form action="index2.html" method="get">
+            <label for="etykietaImie">Imię</label>
+            <input type="text" value="Ala"
+                   maxlength="10"
+                    name="imie"
+                   tabindex="1" accesskey="i" id="etykietaImie">
+            <label for="etykietaNazwisko">Nazwisko</label>
+            <input type="text" value="Kowalska"
+                   maxlength="10"
+                   name="nazwisko"
+                   tabindex="2" accesskey="n" id="etykietaNazwisko">
+            <label for="etykietaOpis">Opis</label>
+            <textarea name="opis" rows="3" cols="20" id="etykietaOpis"></textarea>
 
+            <label for="kraj">Wybierz kraj</label>
+            <select name="kraj" multiple size="2" id="kraj">
+                <option value="pl">Polska</option>
+                <option value="cz">Czechy</option>
+                <option value="de">Niemcy</option>
+                <option value="sk">Słowacja</option>
+            </select>
+            <div>
+                <label class="checkboxy" for="checkDorosly">Dorosly:</label>
+                <input type="checkbox" value="1" name="dorosly" id="checkDorosly">
+                <label class="checkboxy" for="checkPan">Pan:</label>
+                <input type="checkbox" value="2" name="pan" id="checkPan">
+                <label class="checkboxy" for="checkPani">Pani:</label>
+                <input type="checkbox" value="3" name="pani" id="checkPani">
+            </div>
+            <div>
+                <label class="checkboxy" for="p4">Program 4:</label>
+                <input type="radio" value="4" id="p4" name="program-test" checked>
+                <label class="checkboxy" for="p3">Program 3:</label>
+                <input type="radio" value="3" id="p3" name="program-test">
+                <label class="checkboxy" for="p1">Program 1:</label>
+                <input type="radio" value="1" name="program" id="p1">
+                <label class="checkboxy" for="p2">Program 2:</label>
+                <input type="radio" value="2" name="program" id="p2" checked>
+            </div>
+
+            <input type="button" value="Przycisk">
+            <input type="submit">
+        </form>
         <article>
             <h1>
                 Nieco terminologii
@@ -38,7 +96,8 @@
                 <ul>
                     <li>Pierogi ruskie
                         <ul>
-                            <li>Pierogi ruskie</li>
+                            <li>Do utworzenia elementu uzyj &amp; znacznika &lt;li&gt; ktory rbi nowy element listy</li>
+                            <li>Pierogi&nbsp;ruskie</li>
                             <li>Rosół</li>
                             <li>Pomidorowa</li>
                             <li>Kluski</li>
@@ -101,7 +160,7 @@
             </article>
         </article>
     <footer>
-        Copyright SDA
+        &copy;Copyright SDA &#252;
     </footer>
     </body>
 
