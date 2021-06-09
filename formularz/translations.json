@@ -1,0 +1,10 @@
+{
+    "pl": {
+        "after_wait_15": "poczekaj 15 minut",
+        "after_get_document": "zabierz dokumentację"
+    },
+    "en": {
+        "after_wait_15": "wait 15 minutes",
+        "after_get_document": "get documentaion"
+    }
+}
