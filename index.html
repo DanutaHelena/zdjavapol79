@@ -4,6 +4,7 @@
     <head>
        <title>Tytuł</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
         <style>
             label {
                 display: block;
@@ -18,15 +19,20 @@
                 font: 10px 'Arial', sans-serif;
             }
 
+            h1 {
+                color: red;
+            }
+
         </style>
     </head>
 
     <body>
+        <div>
         <form action="index2.html" method="get">
             <label for="etykietaImie">Imię</label>
             <input type="text" value="Ala"
                    maxlength="10"
-                    name="imie"
+                    name="imie" class="imie"
                    tabindex="1" accesskey="i" id="etykietaImie">
             <label for="etykietaNazwisko">Nazwisko</label>
             <input type="text" value="Kowalska"
@@ -65,8 +71,9 @@
             <input type="button" value="Przycisk">
             <input type="submit">
         </form>
+        </div>
         <article>
-            <h1>
+            <h1 style="font-size: 10px;">
                 Nieco terminologii
             </h1>
                 <dl>

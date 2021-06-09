@@ -1,0 +1,20 @@
+h2 {
+    color: chocolate;
+}
+
+h1, h3 {
+    font-size: 900px;
+}
+
+
+body>div>form {
+    background-color: red;
+}
+
+body>div form>input, div p {
+    background-color: yellow;
+}
+
+body input.imie {
+    color: red;
+}
