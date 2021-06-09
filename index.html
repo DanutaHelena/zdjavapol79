@@ -1,174 +1,177 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-    <head>
-       <title>Tytuł</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <style>
-            label {
-                display: block;
-                font: 9px 'Arial', sans-serif;
-            }
+<head>
+    <title>Tytuł</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        label {
+            display: block;
+            font: 9px 'Arial', sans-serif;
+        }
 
-            label.checkboxy {
-                display: inline;
-            }
+        label.checkboxy {
+            display: inline;
+        }
 
-            input {
-                font: 10px 'Arial', sans-serif;
-            }
+        input {
+            font: 10px 'Arial', sans-serif;
+        }
 
-            h1 {
-                color: red;
-            }
+        h1 {
+            color: red;
+        }
 
-        </style>
-    </head>
+    </style>
+</head>
 
-    <body>
+<body>
+<div>
+    <form action="index2.html" method="get">
+        <label for="etykietaImie">Imię</label>
+        <input type="text" value="Ala"
+               maxlength="10"
+               name="imie" class="imie"
+               tabindex="1" accesskey="i" id="etykietaImie">
+        <label for="etykietaNazwisko">Nazwisko</label>
+        <input type="text" value="Kowalska"
+               maxlength="10"
+               name="nazwisko"
+               tabindex="2" accesskey="n" id="etykietaNazwisko">
+        <label for="etykietaOpis">Opis</label>
+        <textarea name="opis" rows="3" cols="20" id="etykietaOpis"></textarea>
+
+        <label for="kraj">Wybierz kraj</label>
+        <select name="kraj" multiple size="2" id="kraj">
+            <option value="pl">Polska</option>
+            <option value="cz">Czechy</option>
+            <option value="de">Niemcy</option>
+            <option value="sk">Słowacja</option>
+        </select>
         <div>
-        <form action="index2.html" method="get">
-            <label for="etykietaImie">Imię</label>
-            <input type="text" value="Ala"
-                   maxlength="10"
-                    name="imie" class="imie"
-                   tabindex="1" accesskey="i" id="etykietaImie">
-            <label for="etykietaNazwisko">Nazwisko</label>
-            <input type="text" value="Kowalska"
-                   maxlength="10"
-                   name="nazwisko"
-                   tabindex="2" accesskey="n" id="etykietaNazwisko">
-            <label for="etykietaOpis">Opis</label>
-            <textarea name="opis" rows="3" cols="20" id="etykietaOpis"></textarea>
-
-            <label for="kraj">Wybierz kraj</label>
-            <select name="kraj" multiple size="2" id="kraj">
-                <option value="pl">Polska</option>
-                <option value="cz">Czechy</option>
-                <option value="de">Niemcy</option>
-                <option value="sk">Słowacja</option>
-            </select>
-            <div>
-                <label class="checkboxy" for="checkDorosly">Dorosly:</label>
-                <input type="checkbox" value="1" name="dorosly" id="checkDorosly">
-                <label class="checkboxy" for="checkPan">Pan:</label>
-                <input type="checkbox" value="2" name="pan" id="checkPan">
-                <label class="checkboxy" for="checkPani">Pani:</label>
-                <input type="checkbox" value="3" name="pani" id="checkPani">
-            </div>
-            <div>
-                <label class="checkboxy" for="p4">Program 4:</label>
-                <input type="radio" value="4" id="p4" name="program-test" checked>
-                <label class="checkboxy" for="p3">Program 3:</label>
-                <input type="radio" value="3" id="p3" name="program-test">
-                <label class="checkboxy" for="p1">Program 1:</label>
-                <input type="radio" value="1" name="program" id="p1">
-                <label class="checkboxy" for="p2">Program 2:</label>
-                <input type="radio" value="2" name="program" id="p2" checked>
-            </div>
-
-            <input type="button" value="Przycisk">
-            <input type="submit">
-        </form>
+            <label class="checkboxy" for="checkDorosly">Dorosly:</label>
+            <input type="checkbox" value="1" name="dorosly" id="checkDorosly">
+            <label class="checkboxy" for="checkPan">Pan:</label>
+            <input type="checkbox" value="2" name="pan" id="checkPan">
+            <label class="checkboxy" for="checkPani">Pani:</label>
+            <input type="checkbox" value="3" name="pani" id="checkPani">
         </div>
-        <article>
-            <h1 style="font-size: 10px;">
-                Nieco terminologii
-            </h1>
-                <dl>
-                    <dt>Zupa</dt>
-                    <dd>Ciecz z wsadem</dd>
+        <div>
+            <label class="checkboxy" for="p4">Program 4:</label>
+            <input type="radio" value="4" id="p4" name="program-test" checked>
+            <label class="checkboxy" for="p3">Program 3:</label>
+            <input type="radio" value="3" id="p3" name="program-test">
+            <label class="checkboxy" for="p1">Program 1:</label>
+            <input type="radio" value="1" name="program" id="p1">
+            <label class="checkboxy" for="p2">Program 2:</label>
+            <input type="radio" value="2" name="program" id="p2" checked>
+        </div>
 
-                    <dt>Drugie danie</dt>
-                    <dd>Bardziej zwarte pod względem konstystencji niż zupa danie</dd>
-                </dl>
+        <input type="button" value="Przycisk">
+        <input type="submit">
+    </form>
+</div>
+<article>
+    <h1 style="font-size: 10px;">
+        Nieco terminologii
+    </h1>
+    <dl>
+        <dt>Zupa</dt>
+        <dd>Ciecz z wsadem</dd>
 
-            <nav>
-                <a href="index2.html">link1</a>
-                <a href="index.html">link2</a>
-                <a href="index3.html">link3</a>
-            </nav>
+        <dt>Drugie danie</dt>
+        <dd>Bardziej zwarte pod względem konstystencji niż zupa danie</dd>
+    </dl>
 
-            <h2>
-                Kuchnia polska
-            </h2>
+    <nav>
+        <a href="index2.html">link1</a>
+        <a href="index.html">link2</a>
+        <a href="index3.html">link3</a>
+    </nav>
 
-            Tutaj <span>dajemy</span> dłuższy <div>opis</div> kuchni polskiej
+    <h2>
+        Kuchnia polska
+    </h2>
 
-
-
-            <p>
-                Moje ulubione dania:
-                <ul>
-                    <li>Pierogi ruskie
-                        <ul>
-                            <li>Do utworzenia elementu uzyj &amp; znacznika &lt;li&gt; ktory rbi nowy element listy</li>
-                            <li>Pierogi&nbsp;ruskie</li>
-                            <li>Rosół</li>
-                            <li>Pomidorowa</li>
-                            <li>Kluski</li>
-                        </ul>
-                    </li>
-                    <li>Rosół</li>
-                    <li>Pomidorowa</li>
-                    <li>Kluski</li>
-                </ul>
-
-                Ranking dań:
-                <ol>
-                    <li>Pomidorowa</li>
-                    <li>Pierogi ruskie</li>
-                    <li>Rosół</li>
-                    <li>Kluski</li>
-                </ol>
-
-            </p>
-            <!-- Tu zaczyna sie wykaz pracownikow
+    Tutaj <span>dajemy</span> dłuższy
+    <div>opis</div>
+    kuchni polskiej
 
 
-            -->
-            <article>
-            <h2>Wykaz pracowników</h2>
+    <p>
+        Moje ulubione dania:
+    </p>
 
-            <table border="1">
-                <caption>Nasi pracownicy</caption>
-                <tr>
-                    <th>Imię</th>
-                    <th>Nazwisko</th>
-                    <th>Wiek</th>
-                    <th>Żonaty/Zamężna</th>
-                </tr>
-                <tr>
-                    <td>Adam</td>
-                    <td>Kowalski</td>
-                    <td>31</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Ewelina</td>
-                    <td rowspan="2">Nowak</td>
-                    <td>26</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Anna</td>
+    <ul>
+        <li>Pierogi ruskie
+            <ul>
+                <li>Do utworzenia elementu uzyj &amp; znacznika &lt;li&gt; ktory rbi nowy element listy</li>
+                <li>Pierogi&nbsp;ruskie</li>
+                <li>Rosół</li>
+                <li>Pomidorowa</li>
+                <li>Kluski</li>
+            </ul>
+        </li>
+        <li>Rosół</li>
+        <li>Pomidorowa</li>
+        <li>Kluski</li>
+    </ul>
 
-                    <td>26</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td colspan="2">Andrzej Kos</td>
+    Ranking dań:
+    <ol>
+        <li>Pomidorowa</li>
+        <li>Pierogi ruskie</li>
+        <li>Rosół</li>
+        <li>Kluski</li>
+    </ol>
 
-                    <td>23</td>
-                    <td>tak</td>
-                </tr>
-            </table>
-            </article>
-        </article>
-    <footer>
-        &copy;Copyright SDA &#252;
-    </footer>
-    </body>
+
+    <!-- Tu zaczyna sie wykaz pracownikow
+
+
+    -->
+    <article>
+        <h2>Wykaz pracowników</h2>
+
+        <table border="1">
+            <caption>Nasi pracownicy</caption>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Wiek</th>
+                <th>Żonaty/Zamężna</th>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Kowalski</td>
+                <td>31</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ewelina</td>
+                <td rowspan="2">Nowak</td>
+                <td>26</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Anna</td>
+
+                <td>26</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">Andrzej Kos</td>
+
+                <td>23</td>
+                <td>tak</td>
+            </tr>
+        </table>
+    </article>
+</article>
+<footer>
+    &copy;Copyright SDA &#252;
+</footer>
+</body>
 
 </html>
