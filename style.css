@@ -11,10 +11,28 @@ body>div>form {
     background-color: red;
 }
 
-body>div form>input, div p {
+body>div form>input[type="text"], article p {
     background-color: yellow;
 }
 
 body input.imie {
     color: red;
 }
+
+p + p {
+    background-color: green;
+}
+
+p {
+    background-color: yellow;
+    font-size: 35px;
+}
+
+div#pierwszydiv {
+    font-size: 50px;
+}
+
+div.ala {
+    font-size: 50px;
+}
+
