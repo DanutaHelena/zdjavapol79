@@ -25,7 +25,7 @@
             <li data-translation="after_get_document">zabierz dokumentację</li>
         </ol>
 
-        <table>
+        <table border="1">
             <caption>Lista dostępnych szczepionek</caption>
             <tr>
                 <th>Nazwa szczepionki</th>
@@ -54,7 +54,27 @@
         </table>
 
         <form action="zapisz.html" method="post" name="forma">
+            <div>
+                <label for="imieid">Imię:</label>
+                <input placeholder="np. Ryszard" type="text" name="imie" id="imieid">
+            </div>
 
+            <div>
+                <label for="nazwiskoid">Nazwisko:</label>
+                <input placeholder="np. Kowalski" type="text" name="nazwisko" id="nazwiskoid">
+            </div>
+
+            <div>
+                <label for="szczepionkaid">Szczepionka:</label>
+                <select name="szczepionka" id="szczepionkaid">
+                    <option value="az">Astra Zeneca</option>
+                    <option value="jj">J&J</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Wyślij zgłoszenie">
+            </div>
 
         </form>
 

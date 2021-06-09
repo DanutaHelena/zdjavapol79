@@ -3,3 +3,57 @@
     box-sizing: border-box;
 }
 
+h1 {
+    background-image: url("covid.jpg");
+    background-size: 100%;
+    color: rgb(255,255,255);
+    padding: 20px 20px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+form {
+    margin: 6rem 0;
+}
+
+input[type="text"], select, input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 5px 0 10px 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #f88;
+}
+
+p, ol, li, label, table, tr, td, th, caption {
+    font-size: 0.8rem;
+}
+
+caption {
+    font-size: 1.2rem;
+  }
+
+html {
+    font-size: 16px;
+}
+
+table {
+    border: 1px solid #aaa;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th, caption {
+    padding: 0.5rem;
+}
+
+th, td {
+    text-align: left;
+}
+
+th {
+    background-color: #ccc;
+}
