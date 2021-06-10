@@ -4,6 +4,7 @@
         <title>Formularz zapisów na szczepienia</title>
         <link rel="stylesheet" href="style.css"/>
         <meta charset="UTF-8">
+
     </head>
     <body>
         <h1>Witaj w formularzu zapisów</h1>
@@ -67,9 +68,41 @@
             <div>
                 <label for="szczepionkaid">Szczepionka:</label>
                 <select name="szczepionka" id="szczepionkaid">
+                    <option value="" disabled="disabled" selected>Wybierz</option>
                     <option value="az">Astra Zeneca</option>
                     <option value="jj">J&J</option>
+                    <option value="co">Corminanty</option>
+                    <option value="pf">Pfizer</option>
                 </select>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Płeć</legend>
+                    <label for="kobietaid">Kobieta:</label>
+                    <input type="radio" value="k" name="plec" id="kobietaid">
+                    <label for="mezczyznaid">Mężczyzna:</label>
+                    <input type="radio" value="m" name="plec" id="mezczyznaid">
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Życzenia</legend>
+                    <label for="dokid">Chcę dokumentacje</label>
+                    <input type="checkbox" value="dok" name="zyczenia" id="dokid">
+                    <label for="dawid">Chcę ustalić termin 2.dawki</label>
+                    <input type="checkbox" value="dow" name="zyczenia" id="dawid">
+                </fieldset>
+            </div>
+
+            <div>
+                <label for="uwagiid">Uwagi:</label>
+                <textarea id="uwagiid" name="uwagi">
+
+
+                </textarea>
+
             </div>
 
             <div>
@@ -77,6 +110,6 @@
             </div>
 
         </form>
-
+        <script type="application/javascript" src="script.js"></script>
     </body>
 </html>

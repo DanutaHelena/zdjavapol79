@@ -17,19 +17,38 @@ form {
     margin: 6rem 0;
 }
 
-input[type="text"], select, input[type="submit"] {
+
+input[type="text"], select, input[type="submit"], textarea {
     width: 100%;
     padding: 5px;
     border: 1px solid #ddd;
     margin: 5px 0 10px 0;
 }
 
+input[type="text"]:hover, select:hover {
+    border: 1px solid #f88;
+}
+
+label[for=uwagiid] {
+    margin-top: 10px;
+    display: block;
+}
+
 input[type="submit"]:hover {
     background-color: #f88;
 }
 
-p, ol, li, label, table, tr, td, th, caption {
+p, ol, li, label, table, tr, td, th, caption, legend {
     font-size: 0.8rem;
+}
+
+legend {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+legend + label {
+    padding-left: 10px;
 }
 
 caption {
@@ -56,4 +75,15 @@ th, td {
 
 th {
     background-color: #ccc;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+div > fieldset {
+    margin-top: 10px;
 }
