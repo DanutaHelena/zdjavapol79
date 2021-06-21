@@ -1,5 +1,4 @@
 (function () {
-
     console.log('witam js');
 
     window.addEventListener("load", () => {
@@ -7,11 +6,8 @@
     })
 
     console.log('koniec skryptu');
-
-    let a = 55;
-    let b = 7;
+    let a = 3;
+    let b = 76;
 
     console.log('naprawde koniec');
 })();
-
-
